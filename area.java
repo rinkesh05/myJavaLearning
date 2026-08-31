@@ -11,7 +11,7 @@ public class area {
         System.out.println("Enter the value of height of the triangle is:");
                int b =S.nextInt();
 
-             float c = (float)1.0/2* (a*b);
+             float c = (float)1.0f/2* (a*b);
 
         System.out.println("The area of circle is:"+ c);
         }
