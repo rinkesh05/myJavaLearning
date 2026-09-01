@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class conditionaltatement
+public class conditionalstatement
  {
     public static void main(String[] args)
     {
