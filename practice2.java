@@ -13,11 +13,15 @@ public class practice2
            String str7= new String(b1,3,2);
               System.out.println(str1);
               System.out.println(str2);
-              System.out.println(ch1);
               System.out.println(str3);
               System.out.println(str4);
               System.out.println(str5);
               System.out.println(str6);
               System.out.println(str7);
+              String str8=str1.toUpperCase();
+              String str9=str1.toLowerCase();
+              System.out.println(str8);
+              System.out.println(str9);
+
         }
 }
