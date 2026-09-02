@@ -12,8 +12,8 @@ class MultiplicationTable
 
          for(int i=1 ; i<=10; i++ )
             {
-                System.out.println(x*i);
+               int mul=x*i;
+                      System.out.println(mul);
             }
-
     }
 }
