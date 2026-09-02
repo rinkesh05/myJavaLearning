@@ -23,6 +23,7 @@ public class Dayswitchcase
                         break;
            case 7 : System.out.println(a + " is sunday");
                         break;
+            default : System.out.println(a + " is a invalid number");
         }
        
     }
