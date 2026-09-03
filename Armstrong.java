@@ -6,23 +6,19 @@ public class Armstrong
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the number:");
         int n=sc.nextInt();
-      int r, sum = 0;
-         int m=n;
-        while(n>0)
-        {
-            r=n%10;
-           
-           sum= sum+r*r*r;
-            n=n/10;
+        int m=n;
+        int r,sum=0;
+        while(n>0){
+          r=n%10;
+          n=n/10;
+          sum=sum+r*r*r;
         }
-          if(sum==m)
-            {
-        System.out.println("Its a Armstrong number");
-          }
-          else
-          {
-            System.out.println("Its not a Armstrong number");
-          }
+        if(sum==m){
+          System.out.println(sum+"is a armstrong number");
+        }
+        else{
+           System.out.println(sum+"is not a armstrong number");
+        }
      }
 
 }
