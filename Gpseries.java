@@ -15,7 +15,7 @@ public class Gpseries {
 
         for (int i = 0; i < n; i++) {
             System.out.print(a + ", ");
-            a = a * r;
+            a = a * r; 
         }
     }
 }
