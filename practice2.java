@@ -1,27 +1,28 @@
-public class practice2 
-{
-    public static void main(String[] args)
-        {
-           String str1="Hello";
-           String str2=new String(str1);
-           String str3=str1.substring(1,4);
-           char ch1[]={'H','e','l','l','o'};
-           String str4=new String(ch1);
-           String str5=new String(ch1,1,3);
-           byte b1[]={72,101,108,108,111};
-           String str6= new String(b1);
-           String str7= new String(b1,3,2);
-              System.out.println(str1);
-              System.out.println(str2);
-              System.out.println(str3);
-              System.out.println(str4);
-              System.out.println(str5);
-              System.out.println(str6);
-              System.out.println(str7);
-              String str8=str1.toUpperCase();
-              String str9=str1.toLowerCase();
-              System.out.println(str8);
-              System.out.println(str9);
+public class practice2 {
+    public static void main(String[] args) {
+        int A[] = {3, 5, 34, 53, 2, 7, 8, 58};
 
+        // Print original array
+        for (int x : A) {
+            System.out.print(x + " ");
         }
+        System.out.println();
+
+        // 1. Save the last element
+        int temp = A[A.length - 1];
+
+        // 2. Shift elements to the right (loop backwards)
+        for (int i = A.length - 1; i > 0; i--) {
+            A[i] = A[i - 1];
+        }
+
+        // 3. Move the saved element to the front
+        A[0] = temp;
+
+        // Print rotated array
+        for (int x : A) {
+            System.out.print(x + " ");
+        }
+        System.out.println();
+    }
 }
