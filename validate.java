@@ -18,6 +18,16 @@ public class validate {
     }
     public static void main (String args[])
     {
-    
+       validate obj =new validate();
+       obj.inputName();
+
+       if (obj.validate(obj.name))  
+        {
+           System.out.println("The name is valid.");
+       }
+       else
+        {
+          System.out.println("The name is not valid.");
+       }
     }
 }
