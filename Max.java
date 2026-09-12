@@ -15,7 +15,8 @@ public class Max
 
     public static void main(String args[])
     {
-       
+           System.out.println( max(0));
            System.out.println( max(10,22,43,43,2534));
+            System.out.println( max(10,22));
     }
 }
