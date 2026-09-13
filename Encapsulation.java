@@ -13,7 +13,7 @@
     // Setter method to safely control and validate data changes
     public void setSpeed(int speed) {
         if (speed >= 0) { // Simple validation rule
-            this.speed = speed;
+            this.speed = speed; 
         }
     }
 }
