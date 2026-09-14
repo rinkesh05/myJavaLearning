@@ -1,7 +1,7 @@
-// 1. The Abstract Base Class
+
 public abstract class Vehicle 
 {
-    private String brand; // Base property for all vehicles
+    private String brand; 
     
     public Vehicle(String brand) 
     {
@@ -13,19 +13,19 @@ public abstract class Vehicle
         return this.brand;
     }
     
-    // Abstract method: Defined here, but HOW it works is implemented by subclasses
+    
     public abstract void drive();
 }
 
-// 2. A Concrete Subclass that extends the abstract class
+
 class Car extends Vehicle 
 {
     public Car(String brand) 
     {
-        super(brand); // Call the constructor of the parent class
+        super(brand); 
     }
 
-    // Implementing the abstract method
+    
     @Override
     public void drive() 
     {
@@ -33,14 +33,13 @@ class Car extends Vehicle
     }
 }
 
-// 3. The Main Class to execute the program
+
 class Main {
     public static void main(String[] args) 
     {
-        // Create an instance of the concrete subclass
-        Car myCar = new Car("Toyota");
         
-        // Call the methods
+        Car myCar = new Car("Toyota");
+    
         myCar.drive();
     }
 }

@@ -1,19 +1,37 @@
- public class Encapsulation {
+public class Encapsulation
+{
     private int speed;
 
-    public Encapsulation() {
+    public Encapsulation() 
+    
+    {
         this.speed = 0;
     }
 
-    // Getter method to safely access private data
-    public int getSpeed() {
+    
+    public int getSpeed() 
+    {
         return speed;
     }
 
-    // Setter method to safely control and validate data changes
-    public void setSpeed(int speed) {
-        if (speed >= 0) { // Simple validation rule
-            this.speed = speed; 
+
+    public void setSpeed(int speed)
+     {
+        if (speed >= 0)
+        
+        {
+            this.speed = speed;
+            System.out.println("Speed set to: " + speed);
         }
+    }
+
+    
+    public static void main(String[] args) 
+    {
+    
+        Encapsulation car = new Encapsulation();
+
+        
+        car.setSpeed(50); 
     }
 }
