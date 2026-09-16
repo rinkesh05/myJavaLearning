@@ -17,8 +17,7 @@ public class cylinder2
     } 
     public double getradius()
     {
-
-         return radius;
+        return radius;
     }
     public double getheight()
     {
