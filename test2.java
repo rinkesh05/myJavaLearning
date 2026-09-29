@@ -12,8 +12,12 @@ class circle2 {
     public double circumference() {
         return perimeter();
     }
+}
 
-@Override
+class cylinder extends circle2 {
+    public double height;
+
+    @Override
     public double area() {
         return 2 * Math.PI * radius * (radius + height);
     }
@@ -21,9 +25,9 @@ class circle2 {
     public double volume() {
         return Math.PI * radius * radius * height;
     }
+}
 
-class cylinder extends circle2 {
-    public double height;public class test2 {
+public class test2 {
     public static void main(String[] args) {
         cylinder c = new cylinder();
 
@@ -33,8 +37,5 @@ class cylinder extends circle2 {
         System.out.println("Surface Area: " + c.area());
         System.out.println("Volume: " + c.volume());
     }
-}
-
-    
 }
 
