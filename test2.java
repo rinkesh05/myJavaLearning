@@ -12,7 +12,15 @@ class circle2 {
     public double circumference() {
         return perimeter();
     }
-}
+
+@Override
+    public double area() {
+        return 2 * Math.PI * radius * (radius + height);
+    }
+
+    public double volume() {
+        return Math.PI * radius * radius * height;
+    }
 
 class cylinder extends circle2 {
     public double height;public class test2 {
@@ -27,13 +35,6 @@ class cylinder extends circle2 {
     }
 }
 
-    @Override
-    public double area() {
-        return 2 * Math.PI * radius * (radius + height);
-    }
-
-    public double volume() {
-        return Math.PI * radius * radius * height;
-    }
+    
 }
 
