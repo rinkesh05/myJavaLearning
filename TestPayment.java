@@ -1,19 +1,34 @@
-class Payment {
-    void pay(double amount) {
-        System.out.println("Processing generic payment of $" + amount);
+abstract class Payment {
+    double amount;
+
+    Payment(double amount) {
+        this.amount = amount;
+    }
+
+    abstract void processPayment();
+
+    void showReceipt() {
+        System.out.println("Amount Paid: $" + amount);
     }
 }
 
 class CreditCardPayment extends Payment {
-    @Override
-    void pay(double amount) {
+    String cardNumber;
+
+    CreditCardPayment(double amount, String cardNumber) {
+        super(amount);
+        this.cardNumber = cardNumber;
+    }
+
+    void processPayment() {
         System.out.println("Processing credit card payment of $" + amount);
     }
 }
 
-public class TestPayment {
+class TestPayment {
     public static void main(String[] args) {
-        Payment p = new CreditCardPayment();
-        p.pay(150.75); 
+        Payment payment = new CreditCardPayment(250.00, "1234-5678-9876");
+        payment.processPayment();
+        payment.showReceipt();
     }
 }
