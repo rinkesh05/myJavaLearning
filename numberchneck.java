@@ -7,7 +7,7 @@ class numbercheck {
         } else if (number < 0) {
             System.out.println("The number is negative");
         } else {
-            System.out.println("The number is zero");
+            System.out.println("The number is zero"); 
         }
     }
 }
